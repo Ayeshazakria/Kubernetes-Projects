@@ -17,5 +17,4 @@ kubectl cluster-info --context kind-testing-cluster
 kubectl get nodes
 
 
-**OUTPUT**
-![Image](https://github.com/user-attachments/assets/6bd90484-cfd4-4769-989a-cdf23c245544)
+Output screenshot: See cluster-output.png
