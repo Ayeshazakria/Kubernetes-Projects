@@ -1,0 +1,20 @@
+✅ Step 1: Download and Install kind (v0.22.0 or later)
+curl -Lo kind https://kind.sigs.k8s.io/dl/v0.22.0/kind-linux-amd64
+chmod +x kind
+sudo mv kind /usr/local/bin/
+
+You can check the latest version of kind here if needed: https://github.com/kubernetes-sigs/kind/releases
+
+✅ Step 2: Create a Cluster with Kubernetes v1.29.0
+To specify a Kubernetes version in your cluster, you need a matching node image provided by kind.
+Use this command to create a cluster named testing-cluster:
+kind create cluster --name testing-cluster --image kindest/node:v1.29.0
+
+
+✅ Step 3: Verify Cluster
+After successful creation:
+kubectl cluster-info --context kind-testing-cluster
+kubectl get nodes
+
+
+Output screenshot: See cluster-output.png
