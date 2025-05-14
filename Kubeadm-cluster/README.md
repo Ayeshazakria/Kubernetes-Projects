@@ -38,4 +38,5 @@ kubectl get pods </br>
 Deleting rs and deployment will delete all the pods managed by these objects (rs,deployment). </br>
 pods created through rs will be deleted after deleting rs. and pods created through deployment will only be deleted after deleting that deployment. </br> 
 
-
+kubectl get deployment
+kubectl delete deployment <deployment-name>
